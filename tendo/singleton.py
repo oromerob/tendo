@@ -60,8 +60,6 @@ class SingleInstance:
         self.initialized = True
 
     def __del__(self):
-        import sys
-        import os
         if not self.initialized:
             return
         try:
